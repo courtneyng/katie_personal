@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    background-image: linear-gradient(to right, rgb(45, 133, 168), rgb(105, 215, 240));
+    margin: 0;
+    font-family: Montserrat;
+    color: #F3F3F3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0;
+
+    img {
+        background-color: transparent;
+        height: 250px;
+        width: 250px;
+    }
+
+    h1 {
+        color: #F3F3F3;
+        font-size: 3.5em;
+        text-align: center;
+    }
+}
+
+
+#mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 40px 0;
+
+    .content {
+        max-width: 1500px;
+        text-align: center;
+
+        .column {
+            float: left;
+            width: 50%;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+    }
+
+    
+
+    .showcase {
+        background-color: #1A1A1A;
+        border-radius: 20px;
+        min-height: 200px;
+        min-width: 426px;
+        width: 80%;
+        padding: 20px;
+
+        .card {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+           // text-align: left;
+            margin: 30px 0;
+            div {
+                width: 55%;
+            }
+
+            img {
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        .emptyContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1 {
+                height: fit-content;
+                width: fit-content;
+                margin: 20px auto;
+                font-size: 8em;
+            }
+            h2 {
+                //height: fit-content;
+                width: fit-content;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    ul {
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        list-style: none;
+        li {
+            margin: 20px;
+        }
+        h4 {
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+    .socials {
+        height: fit-content;
+        a {
+            margin: 0 10px;
+        }
+    }
+}
